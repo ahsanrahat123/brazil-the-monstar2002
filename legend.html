@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Brazil the monster of 2002">
+    <meta name="keywords" content="Brazil,BRAZIL,Brazil worldcup 2002">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <link rel="icon" tupe="image/png" href="./image/logo.png">
+
+    <link rel="stylesheet" href="legend.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="./image/bootstrap.min.css">
+    <title>Legends Of Brazil</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+        
+        .demo {
+            opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+    </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="huh">
+        <ul>
+            <li><a href="./index.html#" target="_blank ">Home</a></li>
+            <li><a href="./legend.html#" target="_blank ">Legends</a></li>
+            <li><a href="./history.html" target="_blank ">History</a></li>
+            <li style="float:right"><a class="active" style=" background-color: #4CAF50;" href="mailto:ahsanrahat282@gmail.com" target="_blank ">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div style="background-color: rgba(120, 233, 233, 0.986);">
+
+
+
+
+
+
+        <div class="container">
+            <div class="mySlides">
+
+                <img src="./image/legend1.jpg     " style="width:100%;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./image/legend2.jpg " style="width:100% ;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="  ./image/legend3.jpg      " style="width:100% ;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./image/legend4.jpg " style="width:100%;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="    ./image/legend5.jpg     " style="width:100%;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="    ./image/legend6.jpg     " style="width:100%;height: 600px;margin-top: 20px;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="./image/legend1.jpg " style="width:100%; height: 140px;" onclick="currentSlide(1)" alt="Legends Of Brazil">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./image/legend2.jpg " style="width:100% ; height: 140px;" onclick="currentSlide(2)" alt="Legends Of Brazil">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./image/legend3.jpg " style="width:100% ; height:140px;" onclick="currentSlide(3)" alt="Legends Of Brazil">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./image/legend4.jpg " style="width:100% ; height: 140px;" onclick="currentSlide(4)" alt="Legends Of Brazil">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./image/legend5.jpg " style="width:100%; height:140px;" onclick="currentSlide(5)" alt="Legends Of Brazil">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./image/legend6.jpg " style="width:100%; height:140px;" onclick="currentSlide(6)" alt="Legends Of Brazil">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="w3-container">
+            <div style="margin-top: 20px; margin-left: 10%;margin-bottom: 20px;margin-right: 10%; font-family: cursive; text-align: justify;font-size: 17px;">
+                <h2 style="font-family: cursive;">Legends Of Brazil</h2>
+                <hr>
+
+                <p>Association football is the most popular sport in Brazil and a prominent part of its national identity. The Brazil national football team has won the FIFA World Cup tournament five times, the most of any team, in 1958, 1962, 1970, 1994
+                    and 2002. Brazil and Germany are the only teams to succeed in qualifying for all the World Cups for which they entered the qualifiers; Brazil is the only team to participate in every World Cup competition ever held. It is among the
+                    favorites to win the trophy every time the competition is scheduled. After Brazil won its third World Cup in 1970, they were awarded the Jules Rimet Trophy permanently. Brazil has also won an Olympic Gold Medal, at the 2016 Summer
+                    Olympics held in Rio de Janeiro.</p>
+
+                <p> Pelé, statistically the most successful footballer ever, led Brazil to two of those championships and won it three times (he was injured during most of the 1962 World Cup). All of the leading players in the national teams are prominent
+                    in the football world, including Garrincha, Cafu, Roberto Carlos, Romário, Rivaldo, Ronaldo, Ronaldinho, Kaká and Neymar in the men's game, and Marta in the women's game. Some of these players can be considered super-stars, achieving
+                    celebrity status internationally and signing sports contracts, as well as advertisement and endorsement contracts, in the value of millions of euros.</p>
+
+                <p>Brazil produces so many legends like Pele,Romario, Ronaldinho . </p>
+
+
+            </div>
+
+            <div class="w3-panel w3-card-4" style="background-color: rgb(19, 235, 188);margin-left: 10%;margin-right: 40%;margin-top: 20px; ">
+
+                <div class="row">
+                    <div class="left1">
+                        <img src="./image/pele.jpg" alt="pele" style="width: 250px; height: 260px;margin: 20px;">
+                    </div>
+                    <div class="right1">
+                        <h2 style="text-align: center; margin-top: 5px; font-family: 'Courgette', cursive;">Pele</h2>
+                        <div style="margin-left: 70px ;">
+
+                            <p style="text-align: justify; margin-right: 7px;font-family: serif;">
+                                Edson Arantes do Nascimento, known as Pelé, is a Brazilian retired professional footballer who played as a forward. Widely regarded as the greatest player of all time, he was among the most successful and popular sports figures of the 20th century. During
+                                his playing days, Pelé was for a period the best-paid athlete in the world.
+                            </p>
+                            <p style="font-family: cursive;">Match played : 92 </p>
+                            <p style="font-family: cursive;">Scored goal : 77 </p>
+                            <p style="font-family: cursive;">Worldcup won : 3 </p>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="w3-panel w3-card-4" style=" float: inline-end;  background-color: rgb(126, 143, 243);margin-left: 40%;margin-right: 10%;margin-top: 20px; ">
+
+
+                <div class="row">
+                    <div class="left2">
+                        <h2 style="text-align: center; margin-top: 5px; font-family: 'Courgette', cursive;">Ziko</h2>
+                        <div style="margin-left: 20px;   margin-right:50px ;">
+
+                            <p style="text-align: justify; margin-right: 15px;font-family: serif;">
+                                Arthur Antunes Coimbra, better known as Zico, is a Brazilian coach and former footballer who played as an attacking midfielder. Often called the "White Pelé", he was a creative playmaker, with excellent technical skills, vision, and an eye for goal, who
+                                is considered one of the most clinical finishers and best passers ever
+                            </p>
+                            <p style="font-family: cursive;">Match played : 71 </p>
+                            <p style="font-family: cursive;">Scored goal : 48 </p>
+                            <p style="font-family: cursive;">Worldcup won : 0 </p>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="right2">
+                        <img src="./image/ziko.jpg" alt="pele" style="float: right ; width: 250px; height: 250px;margin: 20px;">
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="w3-panel w3-card-4" style="background-color: rgb(138, 248, 138);margin-left: 25%;margin-right: 25%;margin-top: 20px;">
+
+
+
+
+                <div class="row">
+                    <div class="left1">
+                        <img src="./image/romario.jpg" alt="pele" style="width: 250px; height: 280px;margin: 20px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                    </div>
+                    <div class="right1">
+                        <h2 style="text-align: center; margin-top: 5px; font-family: 'Courgette', cursive;"> Romario</h2>
+                        <div style="margin-left: 70px ;margin-right: 10px;">
+
+                            <p style="text-align: justify;font-family: serif;">
+                                Romário de Souza Faria, known simply as Romário, is a Brazilian politician who previously achieved worldwide fame as a professional footballer. A prolific striker renowned for his clinical finishing, he is regarded as one of the greatest players of all
+                                time. Romário starred for Brazil in their 1994 FIFA World Cup triumph, receiving the Golden Ball as player of the tournament. He was named FIFA World Player of the Year the same year.
+                            </p>
+                            <p style="font-family: cursive;">Match played : 70 </p>
+                            <p style="font-family: cursive;">Scored goal : 55 </p>
+                            <p style="font-family: cursive;">Worldcup won : 1</p>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="w3-panel w3-card-4" style="background-color: rgb(231, 109, 225);margin-left: 10%;margin-right: 40%;margin-top: 20px;">
+
+
+
+                <div class="row">
+                    <div class="left2">
+                        <h2 style="text-align: center; margin-top: 5px; font-family: 'Courgette', cursive;">Dunga</h2>
+                        <div style="margin-left: 20px;margin-right:50px ;">
+
+                            <p style="text-align: justify; margin-right: 15px;font-family: serif;">
+                                Carlos Caetano Bledorn Verri, commonly known as Dunga, is a Brazilian football manager and former professional player who played as a defensive midfielder. Under his captaincy, Brazil won the 1994 FIFA World Cup and he lifted the World Cup trophy. Along
+                                with Xavi, he is one of only two men to have played in a World Cup final, an Olympic final, a Confederations Cup final and a continental championship final.
+                            </p>
+                            <p style="font-family: cursive;">Match played : 91 </p>
+                            <p style="font-family: cursive;">Scored goal : 6 </p>
+                            <p style="font-family: cursive;">Worldcup won : 1 </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="right2">
+                        <img src="./image/dunga.jpg" alt="pele" style="float: right ; width: 250px; height: 250px;margin: 20px;">
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="background-color: white;">
+
+        <div class="footer " style="margin: 20px;">
+            <footer class="foot ">
+                <div class=Cont>
+                    <h3 class="Tf ">Brazil The Monster of 2002</h3>
+                    <br>
+                    <h4 class="Tf ">Contact Us</h4>
+                    <a href="https://www.facebook.com/ahsan.raha t.566 " target="_blank "><img src="./image/facebook.jpg " /></a>
+                    <a href="https://www.instagram.com/ahsanrahat11/ " target="_blank "><img src="./image/instagram1.jpg " /></a>
+                    <a href="mailto:ahsanrahat282@gmail.com " target="_blank "><img src="./image/gmail.jpg " /></a>
+
+
+                    <p class="text-muted mb-0 ">Copyright Ahsan Rahat © 2020.All rights reserved. </p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

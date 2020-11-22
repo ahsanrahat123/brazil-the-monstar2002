@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Brazil the monster of 2002">
+    <meta name="keywords" content="Brazil,BRAZIL,Brazil worldcup 2002">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <link rel="icon" tupe="image/png" href="./image/logo.png">
+
+    <link rel="stylesheet" href="legend.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="./image/bootstrap.min.css">
+    <title> Ronaldinho</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+        
+        .demo {
+            opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+    </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="huh">
+        <ul>
+            <li><a href="./index.html#" target="_blank ">Home</a></li>
+            <li><a href=" ./legend.html#" target="_blank ">Legends</a></li>
+            <li><a href="./history.html" target="_blank ">History</a></li>
+            <li style="float:right"><a class="active" href="mailto:ahsanrahat282@gmail.com" target="_blank ">Contact</a></li>
+        </ul>
+    </div>
+
+    <div style="background-color:  gainsboro;">
+
+
+
+
+
+
+        <div class="container">
+            <div class="mySlides">
+
+                <img src="./image/ronaldinho00.jpg     " style="width:100%;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./image/ronaldinho12.jpg " style="width:100% ;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./image/ronaldinho4.jpg" style="width:100% ;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./image/legend4.jpg " style="width:100%;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="    ./image/ronaldinho2.jpg     " style="width:100%;height: 600px;margin-top: 20px;">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="    ./image/ronaldinho3.jpg     " style="width:100%;height: 600px;margin-top: 20px;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="./image/ronaldinho00.jpg   " style="width:100%; height: 140px;" onclick="currentSlide(1)" alt="Ronaldinho ">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./image/ronaldinho12.jpg" style="width:100% ; height: 140px;" onclick="currentSlide(2)" alt="Ronaldinho ">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./image/ronaldinho4.jpg" style="width:100% ; height:140px;" onclick="currentSlide(3)" alt="Ronaldinho">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./image/legend4.jpg " style="width:100% ; height: 140px;" onclick="currentSlide(4)" alt="Ronaldinho ">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./image/ronaldinho2.jpg    " style="width:100%; height:140px;" onclick="currentSlide(5)" alt="Ronaldinho">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="  ./image/ronaldinho3.jpg     " style="width:100%; height:140px;" onclick="currentSlide(6)" alt="Ronaldinho ">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+
+
+
+
+
+
+        <div class="w3-container">
+            <div style="margin-top: 20px; margin-left: 10%;margin-bottom: 20px;margin-right: 10%; font-family: cursive; text-align: justify;font-size: 17px;margin-bottom: 20px;">
+                <h2 style="font-family: cursive;">Ronaldinho</h2>
+                <hr>
+
+                <p>Ronaldo de Assis Moreira (born 21 March 1980), commonly known as Ronaldinho Gaúcho (Brazilian Portuguese: [ʁonawˈdʒĩɲu gaˈuʃu]) or simply Ronaldinho, is a Brazilian former professional footballer and ambassador for Barcelona. He played
+                    mostly as an attacking midfielder, but was also deployed as a forward or a winger. Often considered one of the best players of his generation and regarded by many as one of the greatest of all time,[note 2] Ronaldinho won two FIFA
+                    World Player of the Year awards (in 2004 and 2005) and a Ballon d'Or in 2005. A global icon of the sport, he was renowned for his technical skills and creativity; due to his agility, pace and dribbling ability, as well as his use of
+                    tricks, feints, overhead kicks, no-look passes and accuracy from free-kicks. </p>
+
+
+
+
+                <div style="width:70%;float: left;margin-right: 20px;">
+                    <p>Ronaldinho made his career debut for Grêmio, in 1998. At age 20, he moved to Paris Saint-Germain in France before signing for Barcelona in 2003. In his second season with Barcelona, he won his first FIFA World Player of the Year award,
+                        as Barcelona won the 2004–05 La Liga title. The season that followed is considered one of the best in his career as he was integral in Barcelona winning the UEFA Champions League, their first in fourteen years, as well as another
+                        La Liga title, giving Ronaldinho his first career double. After scoring two spectacular solo goals in the first 2005-06 El Clásico, Ronaldinho became the second Barcelona player, after Diego Maradona in 1983, to receive a standing
+                        ovation from Real Madrid fans at the Santiago Bernabéu. Ronaldinho also received his second FIFA World Player of the Year award, as well as the Ballon d'Or.
+                    </p>
+                </div>
+                <div style="width: 27%;float: left;">
+                    <img src="./image/ronaldinho3.jpg" alt="ronaldinho" style="width: 300px;height: 250px;margin-bottom: 20px;">
+                </div>
+
+
+
+
+                <h2 style="font-family: cursive;">International Career</h2>
+                <hr>
+
+
+                <div class="w3-panel w3-card-4" style="background-color: rgb(19, 235, 188); margin-top: 20px;">
+
+                    <div class="row">
+                        <div class="left1">
+                            <img src="./image/Ronaldinhointernational.jpg" alt="pele" style="width: 250px; height: 260px;margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+                        </div>
+                        <div class="right1">
+                            <h2 style="text-align: center; margin-top: 5px; font-family: 'Courgette', cursive;">Ronaldonho</h2>
+                            <div>
+
+                                <p style="text-align: justify; margin-right: 7px;font-family: serif;">
+                                    Ronaldinho is one of few Brazilian players to have played at every international age level. In 1997, he was part of the first Brazilian team to win the FIFA U-17 World Championship, which was held in Egypt, in which his first goal was a penalty against
+                                    Austria in the first group match, which Brazil won 7–0. Ronaldinho finished with two goals and was awarded the Bronze Ball award as Brazil scored a total of 21 goals while only conceding 2.
+                                </p>
+                                <p style="text-align: justify; margin-right: 7px;font-family: serif;">
+                                    1999 was a busy year for Ronaldinho in terms of international play. First he appeared in the South American Youth Championship, where he scored three goals and helped the U20s to reach third place. Then he took part in that year's FIFA World Youth Championship
+                                    in Nigeria, scoring his first goal in Brazil's last group match. In the round of 16, he scored two first-half goals in a 4–0 win over Croatia, and finished with three goals as Brazil were eliminated by Uruguay in the
+                                    quarter-finals.
+
+
+                                    <span id="myBtn" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black" style="font-family: cursive;background-color: rgb(19, 235, 188); border: whitesmoke; color: red; margin-top: 20px;margin-bottom: 20px;">See more</span>
+
+
+                                    <div id="myModal" class="modal">
+
+
+                                        <div class="modal-content" style="background-color: rgb(152, 218, 248);">
+                                            <span class="close">&times;</span>
+
+
+
+                                            <div style="margin-left: 200px;margin-right: 200px;height: 450px;width: 450px;">
+                                                <h2 style="font-family: cursive;margin-left: 28%;">International Career</h2>
+                                                <hr style="margin-left: 28%;">
+
+                                                <p style="text-align: center;margin-top: 20px;font-family: cursive;">Match played : 97</p>
+                                                <P style="text-align: center; font-family: cursive;">Scored goals : 33</P>
+
+                                                <h2 style="text-align: center; font-family: cursive;">Achievements</h2>
+                                                <hr style="margin-left: 28%;">
+                                                <ul style="margin-left: 33%;">
+
+                                                    <li>
+                                                        FIFA U-17 World Championship: 1997
+                                                    </li>
+                                                    <li>
+                                                        Copa América: 1999
+
+                                                    </li>
+                                                    <li>
+                                                        CONMEBOL Pre-Olympic Tournament: 2000
+                                                    </li>
+                                                    <li>
+                                                        FIFA World Cup: 2002
+                                                    </li>
+                                                    <li>
+                                                        FIFA Confederations Cup: 2005
+                                                    </li>
+                                                    <li>Olympic Bronze Medal: 2008
+
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                    <script>
+                                        var modal = document.getElementById('imyBtn');
+
+
+                                        window.onclick = function(event) {
+                                            if (event.target == modal) {
+                                                modal.style.display = "none";
+                                            }
+                                        }
+                                    </script>
+
+
+
+
+
+
+                                </p>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+                <h2 style="font-family: cursive;margin-top: 20px;">Club Career</h2>
+                <hr>
+
+                <div class="w3-panel w3-card-4" style="background-color: rgb(231, 109, 225); margin-top: 20px;">
+
+
+
+                    <div class="row">
+                        <div class="left2">
+                            <h2 style="text-align: center; margin-top: 5px; font-family: 'Courgette', cursive;"> Ronaldinho</h2>
+                            <div style="margin-left: 20px; ">
+
+                                <p style="text-align: justify;  font-family: serif;">
+                                    Ronaldinho's career began with the Grêmio youth squad. He made his senior side debut during the 1998 Copa Libertadores.In 2001, Ronaldinho signed a five-year contract with French club Paris Saint-Germain in a €5 million transfer. In 2003 he moved to Barcelona.In
+                                    July 2008, Ronaldinho turned down a £25.5 million offer from Manchester City of the Premier League to join Italian Serie A giants A.C. Milan on a three-year contract thought to be worth around £5.1 million (€6.5 million)
+                                    a year, for €22.05 million plus €1.05 million bonus each season (€24.15 million in 2010).After being heavily linked with a move back to his childhood club Grêmio, Ronaldinho joined Flamengo on 11 January 2011 with a
+                                    contract ending in 2014.
+                                </p>
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="right2">
+                            <img src="./image/club.jpg" alt="pele" style="float: right ; width: 250px; height: 250px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;">
+                        </div>
+
+                    </div>
+
+
+
+
+                    <span style="font-family: cursive;background-color: rgb(19, 235, 188); border: whitesmoke; color: red; margin-top: 20px;margin-bottom: 20px;" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">see more</span>
+
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4">
+                            <header class="w3-container w3-teal">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <h2>Ronaldinho</h2>
+                            </header>
+                            <div class="w3-container">
+
+                                <p style="text-align: center;margin-top: 20px;font-family: cursive;">Match played : 719</p>
+                                <P style="text-align: center; font-family: cursive;">Scored goals : 280</P>
+
+                                <h2 style="text-align: center; font-family: cursive;">Achievements</h2>
+                                <hr style="margin-left: 28%;">
+                                <ul style="margin-left: 33%;">
+
+                                    <li>
+                                        UEFA Intertoto Cup: 2001
+                                    </li>
+                                    <li>
+                                        La Liga: 2004–05, 2005–06
+                                    </li>
+                                    <li>
+                                        Supercopa de España: 2005, 2006
+                                    </li>
+                                    <li>
+                                        UEFA Champions League: 2005–06
+                                    </li>
+                                    <li>
+                                        Serie A: 2010–11
+                                    </li>
+                                    <li>Campeonato Carioca: 2011
+
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <script>
+                        var modal = document.getElementById('id01');
+
+
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div style="background-color: white;">
+        <div class="footer " style="margin: 20px;">
+            <footer class="foot ">
+                <div class=Cont>
+                    <h3 class="Tf ">Brazil The Monster of 2002</h3>
+                    <br>
+                    <h4 class="Tf ">Contact Us</h4>
+                    <a href="https://www.facebook.com/ahsan.raha t.566 " target="_blank "><img src="./image/facebook.jpg " /></a>
+                    <a href="https://www.instagram.com/ahsanrahat11/ " target="_blank "><img src="./image/instagram1.jpg " /></a>
+                    <a href="mailto:ahsanrahat282@gmail.com " target="_blank "><img src="./image/gmail.jpg " /></a>
+
+
+                    <p class="text-muted mb-0 ">Copyright Ahsan Rahat © 2020.All rights reserved. </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

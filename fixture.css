@@ -1,0 +1,72 @@
+.huh ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.huh {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.huh li {
+    float: left;
+}
+
+.huh li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.huh li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.Tf {
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.foot {
+    background-color: rgb(32, 32, 32);
+}
+
+.Cont {
+    text-align: center;
+}
+
+.laka1234 li {
+    padding: 10px;
+    display: flex;
+}
+
+.bibh-naika td {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    width: 200px;
+    border-color: gray;
+    border-radius: 5px;
+}
+
+.bibh-naika tr:hover {
+    background-color: #4cb4f0;
+}
+
+.bibh-naika {
+    margin-left: 100px;
+}
